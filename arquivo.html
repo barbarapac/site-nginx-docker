@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Terminal</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .terminal {
+            width: 80%;
+            height: 60%;
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+        }
+
+        .line {
+            margin-bottom: 5px;
+        }
+
+        .docker-icon {
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .blinking {
+            display: inline-block;
+            width: 10px;
+            height: 15px;
+            background-color: #00ff00;
+            margin-left: 5px;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="terminal">
+        <div class="line"><img class="docker-icon" src="https://cdn-icons-png.flaticon.com/512/919/919853.png" alt="Docker Icon"> Initializing Docker container...</div>
+        <br>
+        <br>
+        <div class="line">[INFO] Building the project...</div>
+        <div class="line">[INFO] Running tests...</div>
+        <div class="line">[SUCCESS] Tests passed!</div>
+        <div class="line">[INFO] Deploying to production...</div>
+        <div class="line">[SUCCESS] Deployment complete!</div>        
+        <div class="line">.</div>
+        <div class="line">.</div>
+        <div class="line">.</div>
+        <div class="line">.</div>
+        <div class="line">Welcome to the <span class="highlight">DevOps World!</span> <span class="blinking"></span></div>
+    </div>
+
+</body>
+</html>
